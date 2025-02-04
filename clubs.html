@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Clubs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .club {
+            width: 100%;
+            height: auto; /* Change height to auto for responsiveness */
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffffff, #87ceeb); /* Blue to white gradient */
+        }
+        .club:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .club img {
+            margin-left: auto; /* Center the image horizontally */
+            margin-right: auto;
+            margin-top: 15px;
+            max-width: 100%; /* Make the image responsive */
+            height: 200px;
+        }
+        .club-info {
+            padding: 20px;
+        }
+        .club-info h2 {
+            margin-top: 0;
+        }
+        .buttons {
+            margin-top: 20px;
+            text-align: center; /* Center the buttons */
+        }
+        .button {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #333; /* Add border style */
+            margin-right: 10px;
+            transition: background-color 0.3s, border-color 0.3s; /* Add border-color transition */
+        }
+    
+        .button:hover {
+            background-color: #191970;
+            border-color: #555; /* Change border color on hover */
+        }
+    
+        /* Media query for smaller devices */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px; /* Adjust padding for smaller screens */
+            }
+            .club {
+                height: auto; /* Change height to auto for responsiveness */
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>College Clubs</h1>
+    </header>
+    <div class="container">
+        <div class="club">
+            <img src="gdsc.webp" alt="Club 1">
+            <div class="club-info">
+                <h2>GSDC PCCOER</h2>
+                <p>The Global Student Developer Community (GSDC) is a vibrant network dedicated to empowering student developers worldwide. Through a plethora of initiatives, GSDC aims to foster collaboration, learning, and innovation among students passionate about technology. With a focus on skill development, mentorship, and real-world project experiences, GSDC provides a supportive environment where students can enhance their technical proficiency, explore emerging technologies, and connect with like-minded individuals. From hackathons to workshops, online resources to industry partnerships, GSDC equips students with the tools and opportunities they need to thrive in the fast-paced world of software development, ultimately shaping the next generation of tech leaders.</p>
+                <div class="buttons">
+                    <a href="https://gdsc.community.dev/pimpri-chinchwad-college-of-engineering-and-research-pune/" class="button">Join</a>
+                    <a href="https://gdsc.community.dev/pimpri-chinchwad-college-of-engineering-and-research-pune/" class="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="club">
+            <img src="gfg.jpeg" alt="Club 2">
+            <div class="club-info">
+                <h2>GEEKS FOR GEEKS PCCOER</h2>
+                <p>GeeksforGeeks is a widely recognized platform that serves as a comprehensive resource hub for computer science enthusiasts, programmers, and technology professionals. Founded in 2009 by Sandeep Jain, it has emerged as a go-to destination for learning, practicing, and mastering various aspects of programming, algorithms, data structures, and computer science concepts. The platform offers a plethora of articles, tutorials, coding challenges, and interview preparation materials, catering to both beginners and experienced developers. With its user-friendly interface and vast array of topics covered, GeeksforGeeks has garnered a massive following, establishing itself as a cornerstone in the tech community. Additionally, it fosters a collaborative environment through forums and discussions, allowing users to seek assistance and share knowledge.</p>
+                <div class="buttons">
+                    <a href="https://www.geeksforgeeks.org/colleges/pimpri-chinchwad-college-of-engineering-and-research-pccoer-ravet/" class="button">Join</a>
+                    <a href="https://www.geeksforgeeks.org/colleges/pimpri-chinchwad-college-of-engineering-and-research-pccoer-ravet/" class="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="club">
+            <img src="tedx.jpg" alt="Club 1">
+            <div class="club-info">
+                <h2>TEDX PCCOER</h2>
+                <p>TEDx is a global platform that enables independent organizers to host events that spark deep discussions and showcase ideas worth spreading in their local communities. Stemming from the larger TED (Technology, Entertainment, Design) conferences, TEDx events are self-organized gatherings licensed by TED. These events bring together speakers from diverse backgrounds, ranging from technology and science to arts and social issues, to share their insights and experiences in engaging and thought-provoking talks. TEDx talks often explore innovative concepts, challenge conventional thinking, and inspire audiences to contemplate new perspectives and take action. With thousands of events held worldwide each year, TEDx has become a catalyst for fostering creativity, curiosity, and dialogue on a wide range of topics, contributing to the spread of ideas and knowledge globally.</p>
+                <div class="buttons">
+                    <a href="https://www.ted.com/tedx/events/53772" class="button">Join</a>
+                    <a href="https://www.ted.com/tedx/events/53772" class="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="club">
+            <img src="acm.png" alt="Club 2">
+            <div class="club-info">
+                <h2>ACM PCCOER</h2>
+                <p>TEDx is a global initiative aimed at spreading ideas and fostering innovation through independently organized events. Emerging as an offshoot of the renowned TED conferences, TEDx events are organized by local communities worldwide under a free license granted by TED. These events bring together diverse speakers who present captivating talks on a wide array of topics, ranging from technology and science to arts, culture, and societal issues. TEDx talks are known for their brevity, typically lasting no more than 18 minutes, yet they often deliver profound insights and inspire audiences to contemplate new perspectives and take action. By providing a platform for sharing ideas and experiences, TEDx plays a vital role in facilitating meaningful conversations, promoting learning, and driving positive change on both a local and global scale.</p>
+                <div class="buttons">
+                    <a href="https://pccoer.acm.org/" class="button">Join</a>
+                    <a href="https://pccoer.acm.org/" class="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

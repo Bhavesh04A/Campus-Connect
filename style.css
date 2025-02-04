@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    background: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensure the navigation bar stays on top of other elements */
+}
+
+body {
+    background-color: white;
+}
+
+nav::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    padding-left: 20px; /* Adjust padding as needed */
+}
+
+nav .logo img {
+    height: 70px; /* Adjust the height of the logo as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-left: 200px;
+    padding: 2px;
+    margin top: 2px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 100px; /* Increase this value to adjust the height of the navbar */
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+
+nav ul ul li a:hover {
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s;
+}
+
+nav ul ul ul {
+    border-top: none;
+}
+
+nav ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+.slideshow-container {
+    height: 700px;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    padding-top: 70px;
+    background-color: white; /* Add this line to set the background color */
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%; /* Adjust the width of the images as per your preference */
+    height: 600px; /* Adjust the height of the images as per your preference */
+    background-size: cover;
+}
+
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+h1{
+    font-size: 80px;
+    font-weight: 300;
+    color: black;
+    
+}
+h2{
+    color: black;
+}
+p{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background-color: #6a00a5;
+    background-image: linear-gradient(160deg, #6a00a5 0%, #cb83e6 100%);
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.course-col:hover{
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all 0.3 linear;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust this property as needed */
+    align-items: center;
+    padding: 20px; /* Add padding to center the cards within the container */
+}
+
+.box {
+    width: calc(29.33% - 40px); /* 33.33% width for each card with spacing between them */
+    height: 380px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 20px; /* Add spacing between rows */
+}
+
+.box h3{
+font-size:35px;
+padding: 2opx 0px ;
+color: #444;
+}
+.box p{
+font-size: 15;
+color: black
+
+}
+.box button{
+width: 160px;
+height: 40px;
+background-color: #333;
+color: #fff;
+border: none;
+outline: none;
+font-size: 30px;
+cursor: pointer;
+border-radius: 50px;
+margin-top: 40px;
+}
+.box button:hover{
+letter-spacing: 2px;
+opacity: .8;
+}
+.box::before{
+width: 100%;
+height: 100%;
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.box::after{
+width: 100%;
+height: 100%;
+background-color: #fbda61;
+background-image: linear-gradient(40deg,#FBDA61 0%,#FF5ACD 100%);
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+clip-path: circle(20% at 90% 3%);
+transition: .2s;
+}
+.box .count{
+position: absolute;
+top: 15px;
+right: 30px;
+font-size: 50px;
+font-weight: bolder;
+color: #fff;
+
+}
+.box:nth-child(2)::after{
+background-color: #0093e9;
+background-image: linear-gradient(160deg ,#0093e9 0%,#80d0c7 100%);
+}
+.box:nth-child(3)::after{
+background-color: #08AEEA;
+background-image: linear-gradient(0deg ,#08AEEA 0%,#2AF598 100%);
+}
+.box:nth-child(5)::after{
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg ,#0093e9 0%,#80d0c7 100%);
+    }
+.box:nth-child(6)::after{
+        background-color: #08AEEA;
+        background-image: linear-gradient(0deg ,#08AEEA 0%,#2AF598 100%);
+        }
+.box:hover::after{
+clip-path: circle(100%);
+}
+.box:hover h3{
+color: #fff;
+}
+.box:hover p{
+color: #fff;
+}
+.box:hover button{
+color: #333;
+background-color: #fff;
+
+}
+.box:hover::before{
+    background-color: rgba(0, 0, 0, .1);
+}
+/* Add this CSS for hover effect on Profile Cards */
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.profile-card {
+    width: calc(26% - 10px); /* Adjust the width as needed to fit three cards in a row */
+    height: 345px; /* Keep the height of the profile cards */
+    margin: 20px 0; /* Adjust the margin for spacing */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+/* ... (Rest of the existing styling for profile cards) */
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #333;
+}
+
+.profile-card p {
+    font-size: 12px;
+    color: #666;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust the width of social icons */
+    height: 30px; /* Adjust the height of social icons */
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+h1{
+    text-align: center;
+}
+/* Add this CSS for the footer */
+
+
+
+/* Additional styles for responsiveness */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: cyan;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: white;
+    background-color:white;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Clubs</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    .club {
+        width: 100%;
+        height: auto; /* Change height to auto for responsiveness */
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+    }
+    .club:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .club img {
+        margin-left: auto; /* Center the image horizontally */
+        margin-right: auto;
+        margin-top: 15px;
+        max-width: 100%; /* Make the image responsive */
+        height: 200px;
+    }
+    .club-info {
+        padding: 20px;
+    }
+    .club-info h2 {
+        margin-top: 0;
+    }
+    .buttons {
+        margin-top: 20px;
+        text-align: center; /* Center the buttons */
+    }
+    .button {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 2px solid #333; /* Add border style */
+        margin-right: 10px;
+        transition: background-color 0.3s, border-color 0.3s; /* Add border-color transition */
+    }
+
+    .button:hover {
+        background-color: #191970;
+        border-color: #555; /* Change border color on hover */
+    }
+
+    /* Media query for smaller devices */
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 10px; /* Adjust padding for smaller screens */
+        }
+        .club {
+            height: auto; /* Change height to auto for responsiveness */
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>College Clubs</h1>
+    </header>
+    <div class="container">
+        <div class="club">
+            <img src="gdsc.webp" alt="Club 1">
+            <div class="club-info">
+                <h2>GSDC PCCOER</h2>
+                <p>ihucuhuihec</p>
+                
+            </div>
+        </div>
+        <div class="club">
+            <img src="gfg.jpeg" alt="Club 2">
+            <div class="club-info">
+                <h2>GEEKS FOR GEEKS PCCOER</h2>
+                <p>khbfcgdiufe</p>
+                
+            </div>
+        </div>
+        <div class="club">
+            <img src="tedx.jpg" alt="Club 1">
+            <div class="club-info">
+                <h2>TEDX PCCOER</h2>
+                <p>chuhehue</p>
+            </div>
+        </div>
+        <div class="club">
+            <img src="acm.png" alt="Club 2">
+            <div class="club-info">
+                <h2>ACM PCCOER</h2>
+                <p> jbcuuenjcuh</p>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
